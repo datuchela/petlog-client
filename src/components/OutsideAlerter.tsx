@@ -6,11 +6,7 @@ import React, { useRef, useEffect } from "react";
 function useOutsideAlerter(ref: React.RefObject<HTMLDivElement>, action: any) {
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent): void => {
-      if (
-        e.target instanceof HTMLElement &&
-        ref.current &&
-        !ref.current.contains(e.target)
-      ) {
+      if (e.target instanceof HTMLElement && ref.current && !ref.current.contains(e.target)) {
         action();
       }
     };
