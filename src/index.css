@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.date::-webkit-calendar-picker-indicator {
+  transform: scale(1.25);
+  cursor: pointer;
+}
